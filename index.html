@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UNIASSELVI - Aluno</title>
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+<link type="image/x-icon" href="https://portal.uniasselvi.com.br/public/img/site/favicons/favicon.ico" rel="shortcut icon">
+<style>
+  :root {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+  }
+  nav > p {
+    border: 1px solid rgba(0, 0, 0, 0.308);
+    padding: 2px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.308);
+  }
+  a.texto-menu {
+    text-decoration: none;
+    text-indent: 20px;
+    color: black;
+  }
+  a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  img.network {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-left: 10px;
+  }
+  div.barra-pesquisa {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  div > img {
+    width: 300px;
+    height: 300px;
+  }
+  input {
+    border-radius: 50px;
+    border: 1px solid rgba(0, 0, 0, 0.404);
+    width: 500px;
+    height: 30px;
+    padding: 10px;
+  }
+  input:focus-visible {
+    outline: none;
+  }
+  input:hover {
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.308);
+  }
+  button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    min-width: 100px;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0);
+  }
+  button:hover {
+    border: 1px solid rgba(0, 0, 0, 0.308);
+    cursor: pointer;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.308);
+  }
+  .icon-input {
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: calc(5% - 10px) center;
+    padding-left: 50px;
+  }
+  footer.content-rodape {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    text-indent: 30px;
+    border-top: 1px solid rgba(0, 0, 0, 0.308);
+  }
+  a.texto-rodape {
+    text-decoration: none;
+    color: black;
+    margin-top: 10px;
+  }
+  a.texto-rodape:visited {
+    color: black;
+  }
+  a.texto-rodape:hover {
+    text-decoration: underline;
+  }
+  @media screen and (max-width: 1280px) {
+    footer.content-rodape {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    input {
+      width: 400px;
+    }
+  }
+</style>
+<body>
+  <nav>
+    <p>Portal do aluno</p>
+    <a href="https://areasegura.uniasselvi.com.br" target="_blank" class="texto-menu">EAD</a>
+    <a href="https://areasegura.uniasselvi.com.br" target="_blank" class="texto-menu">PRESENCIAL</a>
+    <img class="network" src="network.png" alt="network">
+  </nav>
+  <main>
+    <div class="barra-pesquisa">
+      <img src="uniasselvi.png" alt="logo da uniasselvi">
+      <input type="text" name="pesquisa" id="pesquisa" placeholder="Pesquisar Aluno" class="icon-input">
+      <button type="button" onclick='alert("Feito por Pablo César")'>Pesquisar Aluno</button>
+    </div>
+  </main>
+  <footer class="content-rodape">
+    <a href="https://portal.uniasselvi.com.br/institucional" target="_blank" class="texto-rodape">Conheça a UNIASSELVI</a>
+    <a href="https://portal.uniasselvi.com.br/institucional/locais" target="_blank" class="texto-rodape">Unidades e polos</a>
+    <a href="https://portal.uniasselvi.com.br/graduacao" target="_blank" class="texto-rodape">Cursos graduação</a>
+    <a href="https://portal.uniasselvi.com.br/posgraduacao" target="_blank" class="texto-rodape">Cursos de pós graduação</a>
+    <a href="https://portal.uniasselvi.com.br/cursotecnico" target="_blank" class="texto-rodape">Cursos profissionalizantes e técnicos</a>
+    <a href="https://wa-button.omni.chat/?retailerId=x2THigtexm&wabNumber=554733016100&index=6&message=Ol%C3%A1%2C%20gostaria%20de%20ser%20atendido(a).&codeMessage=Este%20%C3%A9%20meu%20c%C3%B3digo%3A" target="_blank" class="texto-rodape">Contato</a>
+    <a href="https://portal.uniasselvi.com.br/cursolivre" target="_blank" class="texto-rodape">Cursos livres</a>
+  </footer>
+</body>
+</html>
